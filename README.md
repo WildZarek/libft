@@ -44,8 +44,8 @@
 ## Technical considerations
 
 - Declaring global variables is strictly forbidden.
-- If you need helper functions to break down a more complex function, define them
-as `static` functions to restrict their scope to the appropriate file.
+- If you need helper functions to break down a more complex function,<br>
+  define them as `static` functions to restrict their scope to the appropriate file.
 - All files must be placed at the root of your repository.
 - All files must be placed at the root of your repository.
 - Every `.c` file must compile with the following *flags*: `-Wall -Werror -Wextra`.
@@ -106,4 +106,128 @@ Require the use of `malloc()`:
         <td><code>calloc()</code></td>
         <td><code>strdup()</code></td>
     </tr>
+</table>
+
+## Part 2 - Additional functions
+
+In this second part, you must develop a set of functions that are either not included in
+the **libc**, or exist in a different form.
+
+<table>
+  <tr>
+    <th>Function name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><code>ft_substr()</code></td>
+    <td>Generate a substring from another string.</td>
+  </tr>
+  <tr>
+    <td><code>ft_strjoin()</code></td>
+    <td>Generate a string as a result of concatenating 2 strings.</td>
+  </tr>
+  <tr>
+    <td><code>ft_strtrim()</code></td>
+    <td>Removes all characters of a string, from a character set, until a character not belonging to that character set is found.</td>
+  </tr>
+  <tr>
+    <td><code>ft_split()</code></td>
+    <td>Generate an array of strings resulting from split a string into substrings using a character as delimiter.</td>
+  </tr>
+  <tr>
+    <td><code>ft_itoa()</code></td>
+    <td>Generates a string representing the value of the integer received as argument.</td>
+  </tr>
+  <tr>
+    <td><code>ft_strmapi()</code></td>
+    <td>Applies a function to each character in a string.</td>
+  </tr>
+  <tr>
+    <td><code>ft_striteri()</code></td>
+    <td>Applies a function to each character in a string with the index of the character.</td>
+  </tr>
+  <tr>
+    <td><code>ft_putchar_fd()</code></td>
+    <td>Prints a character in a specific file descriptor.</td>
+  </tr>
+  <tr>
+    <td><code>ft_putstr_fd()</code></td>
+    <td>Prints a string in a specific file descriptor.</td>
+  </tr>
+  <tr>
+    <td><code>ft_putendl_fd()</code></td>
+    <td>Prints a string in a specific file descriptor, followed by a newline character.</td>
+  </tr>
+  <tr>
+    <td><code>ft_putnbr_fd()</code></td>
+    <td>Prints an integer in a specific file descriptor.</td>
+  </tr>
+</table>
+
+# Bonus part
+
+Memory and string manipulation functions are useful...<br>
+But you will soon discover that manipulating lists is even more useful.
+
+You have to use the following structure to represent a node of your list.
+
+Add its declaration to your `libft.h` file:
+
+```c
+typedef struct s_list
+{
+void            *content;
+struct s_list   *next;
+}               t_list;
+```
+
+The members of the t_list struct are:
+
+- `content`: The data contained in the node.<br>
+   Using void * allows storing any kind of data.
+- `next`: The address of the next node, or NULL if the next node is the last one.
+
+Implements the following functions to manipulate lists:
+
+<table>
+  <tr>
+    <th>Function name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><code>ft_lstnew()</code></td>
+    <td>Creates a new node with the indicated content and with <code>next</code> pointing to <code>NULL</code>.</td>
+  </tr>
+  <tr>
+    <td><code>ft_lstadd_front()</code></td>
+    <td>Adds a new node to the top of a list.</td>
+  </tr>
+  <tr>
+    <td><code>ft_lstsize()</code></td>
+    <td>Counts the number of nodes in a list.</td>
+  </tr>
+  <tr>
+    <td><code>ft_lstlast()</code></td>
+    <td>Searches for the last node in the list.</td>
+  </tr>
+  <tr>
+    <td><code>ft_lstadd_back()</code></td>
+    <td>Adds a new node to the end of a list.</td>
+  </tr>
+  <tr>
+    <td><code>ft_lstdelone()</code></td>
+    <td>Removes a node from a list.</td>
+  </tr>
+  <tr>
+    <td><code>ft_lstclear()</code></td>
+    <td>Deletes an entire list.</td>
+  </tr>
+  <tr>
+    <td><code>ft_lstiter()</code></td>
+    <td>Iterate over the list and applies a function to the contents of each node.</td>
+  </tr>
+  <tr>
+    <td><code>ft_lstmap()</code></td>
+    <td>Iterate over the list and applies a function to the contents of each node.</td>
+  </tr>
 </table>
