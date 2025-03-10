@@ -8,7 +8,7 @@
         <img alt='42 Málaga' src='https://img.shields.io/badge/Málaga-black?style=for-the-badge&logo=42&logoColor=white'/>
     </a>
     <img src="https://img.shields.io/badge/125%20%2F%20100-success?style=for-the-badge&label=SUCCESS&labelColor=%23424242&color=%23DACE28" />
-    <img src="https://api.visitorbadge.io/api/visitors?user=WildZarek&repo=libft&label=VISITORS&labelColor=%23424242&countColor=%23dace28&labelStyle=upper"/>
+    <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FWildZarek%2Flibft&label=VISITORS&labelColor=%23424242&countColor=%23dace28&labelStyle=upper"/>
   
 </div>
 
