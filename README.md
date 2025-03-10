@@ -7,14 +7,14 @@
     <a href='https://profile.intra.42.fr/users/dsarmien' target="_blank" style="text-decoration: none;">
         <img alt='42 Málaga' src='https://img.shields.io/badge/Málaga-black?style=for-the-badge&logo=42&logoColor=white'/>
     </a>
-    <a href='https://projects.intra.42.fr/42cursus-libft/dsarmien' target="_blank"><img src="https://img.shields.io/badge/125%20%2F%20100-success?style=for-the-badge&label=SUCCESS&labelColor=%23424242&color=%23DACE28" /></a>
+    <img src="https://img.shields.io/badge/125%20%2F%20100-success?style=for-the-badge&label=SUCCESS&labelColor=%23424242&color=%23DACE28" />
     <img src="https://api.visitorbadge.io/api/visitors?user=WildZarek&repo=libft&label=VISITORS&labelColor=%23424242&countColor=%23dace28&labelStyle=upper"/>
   
 </div>
 
 ---
 
-# libft
+# <a href='https://projects.intra.42.fr/42cursus-libft/dsarmien' target="_blank">libft</a>
 
 ## Mandatory Part
 
