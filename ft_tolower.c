@@ -6,7 +6,7 @@
 /*   By: dsarmien <dsarmien@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 13:13:04 by dsarmien          #+#    #+#             */
-/*   Updated: 2024/09/21 19:47:02 by dsarmien         ###   ########.fr       */
+/*   Updated: 2025/03/10 17:15:00 by dsarmien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 int	ft_tolower(int c)
 {
 	if (65 <= c && c <= 90)
-	{
 		return (c + 32);
-	}
 	return (c);
 }

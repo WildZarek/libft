@@ -6,7 +6,7 @@
 /*   By: dsarmien <dsarmien@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 13:19:32 by dsarmien          #+#    #+#             */
-/*   Updated: 2024/09/21 19:45:11 by dsarmien         ###   ########.fr       */
+/*   Updated: 2025/03/10 17:13:14 by dsarmien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (i < n)
 	{
 		if (p1[i] != p2[i])
-		{
 			return (p1[i] - p2[i]);
-		}
 		i++;
 	}
 	return (0);
